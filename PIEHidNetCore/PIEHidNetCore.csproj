@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Managed .Net SDK Library for P.I. Engineering USB HID devices including X-keys, RailDriver, custom products. 
+.NET Standard 2.0 implementation supporting a wide range of .NET platforms including .NET Framework 4.6.1 to 4.8, .NET Core &gt;=2.0 and .NET 5 and and beyond. 
+Implementing 32bit and 64bit support in a single version.</Description>
+    <Authors>P.I. Engineering</Authors>
+    <PackageId>PIEHidNetCore</PackageId>
+    <Product>P.I. Engineering SDK</Product>
+    <PackageIcon>RailDriver.png</PackageIcon>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AssemblyName>PIEHidNetCore</AssemblyName>
+    <Version>1.0.0.1</Version>
+  </PropertyGroup>
+</Project>
