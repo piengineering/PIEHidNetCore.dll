@@ -1,0 +1,2 @@
+In Visual Studio 2019 open the PIEHidNetCore.csproj file. Select desired build configuration, Debug or Release, then select Build Solution from the Build menu.
+The compiled PIEHidNetCore.dll will be in the ../bin/configuration/netstandard2.0 folder where configuration is either Debug or Release.
