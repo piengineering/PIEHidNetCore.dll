@@ -831,6 +831,7 @@ namespace PIEHidNetCore
                     // convert buffer (starting past the cbsize variable) to string path
                     paths.AddLast(Marshal.PtrToStringAuto(detailBuffer + 4));
                 }
+                Marshal.FreeHGlobal(detailBuffer);
             }
             _ = DeviceManagementApiDeclarations.SetupDiDestroyDeviceInfoList(deviceInfoSet);
             //Security attributes not used anymore - not necessary Onur March 2009
@@ -900,6 +901,7 @@ namespace PIEHidNetCore
                                 devices.AddLast(new PIEDevice(path, hidAttributes.VendorID, hidAttributes.ProductID, hidAttributes.VersionNumber, hidCaps.Usage,
                                     hidCaps.UsagePage, hidCaps.InputReportByteLength, hidCaps.OutputReportByteLength, ssss, psss));
                             }
+                            HidApiDeclarations.HidD_FreePreparsedData(pPerparsedData);
 
                         }
                     }
